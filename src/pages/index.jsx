@@ -1,0 +1,12 @@
+export { default as Administrador} from './Administrador';
+export { default as Pedidos } from './Pedidos';
+export { default as Productos } from './Productos';
+export { default as Empleados } from './Empleados';
+export { default as Editor } from './Editor';
+export { default as Clientes } from './Clientes';
+export { default as Tareas } from './Tareas';
+export { default as Calendario } from './Calendario';
+export { default as Area } from './Charts/Area';
+export { default as Financial } from './Charts/Financial';
+export { default as Foot } from './Charts/Foot';
+export { default as Stacked } from './Charts/Stacked';
