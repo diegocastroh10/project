@@ -515,7 +515,11 @@ export const links = [
       {
         name: 'Tareas',
         icon: <BsKanban />,
-      },  
+      }, 
+      {
+        name: 'Prueba',
+        icon: <FiPieChart />,
+      }, 
 /*
       {
         name: 'color-picker',
@@ -543,10 +547,6 @@ export const links = [
         icon: <AiOutlineBarChart />,
       },
 */
-      {
-        name: 'Foot',
-        icon: <FiPieChart />,
-      },
       {
         name: 'Finanzas',
         icon: <RiStockLine />,

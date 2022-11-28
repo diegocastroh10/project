@@ -4,14 +4,17 @@ import { FiSettings } from 'react-icons/fi';
 import { TooltipComponent } from '@syncfusion/ej2-react-popups';
 
 import { Navbar, Footer, Sidebar, ThemeSettings} from './components';
-import { Administrador, Pedidos, Productos, Area, Financial, Foot, Stacked, Calendario, Tareas, Clientes, Editor, Empleados} from './pages';
+import { Administrador, Pedidos, Productos, Area, Finanzas, Stacked, Calendario, Tareas, Clientes, Prueba, Editor, Empleados} from './pages';
 
 import { useStateContext } from './contexts/ContextProvider';
 
 import './App.css';
 
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 const App = () => {
   const { activeMenu } = useStateContext();
+
 
   return (
     <div>
@@ -57,12 +60,11 @@ const App = () => {
               {/*Apps*/}
               <Route path='/calendario' element={<Calendario />} />
               <Route path='/tareas' element={<Tareas />} />
-
+              <Route path='/prueba' element={<Prueba />} />
 
               {/*Charts*/}
               <Route path='/area' element={<Area />} />
-              <Route path='/financial' element={<Financial />} />
-              <Route path='/foot' element={<Foot />} />
+              <Route path='/finanzas' element={<Finanzas />} />
               <Route path='/stacked' element={<Stacked />} />
 
 
