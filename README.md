@@ -1,13 +1,6 @@
 # README
 
 ## Backend Deploy
-**IMPORTANTE**: Para usar el backend es necesario tener conexión con servicio un PostgreSQL sobre el puerto 5432. Este servicio debe tener registrada la siguiente base de datos:
-| Parámetro | Valor  |
-|-----------|--------|
-| Nombre BD | fooddy |
-| Usuario   | fooddy |
-| Clave     | f00ddy |
-| Puerto    | 5432   |
 ### 1. Instalación
 El pimero paso consiste en: descargar el repositorio, ingresar al directorio **backend** e intralar las dependencias.
 ```
@@ -17,15 +10,13 @@ $ npm install
 ```
 
 ### 2. Configuración
-El Backend debe escuchar en el puerto 3001, dicha configuración se realiza en **package.json**
-Para Windows:
-```
-"start": "set PORT=3001 && react-scripts start"
-```
-Para Linux:
-```
-"start": "PORT=3001 react-scripts start"
-```
+Para usar el backend es necesario tener conexión con servicio un PostgreSQL sobre el puerto 5432. Este servicio debe tener registrada la siguiente base de datos:
+| Parámetro | Valor  |
+|-----------|--------|
+| Nombre BD | fooddy |
+| Usuario   | fooddy |
+| Clave     | f00ddy |
+| Puerto    | 5432   |
 
 ### 3. Levantamiento (Entorno de Desarrollo)
 Dentro del directorio **backend** ejecutar el script:
