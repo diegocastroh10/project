@@ -19,6 +19,13 @@
     top: 25vh;
 }
 
+.loginForm {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25vh;
+}
+
 /* --------------------------- MOBILE VERSION ------------------------------ */
 
 .alt-login {

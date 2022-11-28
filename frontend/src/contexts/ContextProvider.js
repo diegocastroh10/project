@@ -37,3 +37,18 @@ export const ContextProvider = ({ children }) => {
 }
 
 export const useStateContext = () => useContext(StateContext);
+
+/*
+
+  const [token, setToken] = useState('');
+  const [isLogin, setIsLogin] = useState(false);
+
+
+  useEffect(() => {
+    if (localStorage.getItem('token')){
+      const token_ = localStorage.getItem('token');
+      setToken(token_)
+      setIsLogin(true);
+    }
+  });
+ */

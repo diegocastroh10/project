@@ -31,7 +31,7 @@ function Administrador() {
           {earningData.map((item) => (
             <div
               key={item.title} 
-              classname='bg-white
+              className='bg-white
               dark:text-gray-200
               dark:bg-secondary-dark-bg -md:w-5
               p-4 pt-9 rounded-2xl'
