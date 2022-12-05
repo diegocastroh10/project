@@ -883,26 +883,26 @@ export const userProfileData = [
 
 export const ordersGrid = [
   {
-    headerText: 'Image',
+    headerText: 'Imagen',
     template: gridOrderImage,
     textAlign: 'Center',
     width: '120',
   },
   {
-    field: 'OrderItems',
-    headerText: 'Item',
+    field: 'title',
+    headerText: 'Titulo',
     width: '150',
     editType: 'dropdownedit',
     textAlign: 'Center',
   },
-  { field: 'CustomerName',
-    headerText: 'Customer Name',
+  { field: 'description',
+    headerText: 'Descripción',
     width: '150',
     textAlign: 'Center',
   },
   {
-    field: 'TotalAmount',
-    headerText: 'Total Amount',
+    field: 'currency',
+    headerText: 'Precio',
     format: 'C2',
     textAlign: 'Center',
     editType: 'numericedit',

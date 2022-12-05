@@ -12,6 +12,7 @@ import { UpdateProductPropertiesDto } from "./dto/update-product-properties.dto"
 import { UpdateProductPhotosDto } from "./dto/update-product-photos.dto";
 import { DeleteProductDto } from "./dto/delete-product.dto";
 
+
 @Injectable()
 export class ProductsService {
     constructor(
@@ -86,7 +87,7 @@ export class ProductsService {
             const { payload } = await jose.jwtVerify(jwt, secret);
             const products = await this.productModel.findAll({
                 where: {administratorId: payload.id}
-            })
+        })
             return ({
                 status: StatusCodes.OK,
                 send: ReasonPhrases.OK,
@@ -253,5 +254,6 @@ export class ProductsService {
 
         }
     }
+
 
 }

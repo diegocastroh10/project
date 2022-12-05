@@ -10,7 +10,7 @@ export class ProductModel extends Model {
 
     @AllowNull(false)
     @Column
-    description: string;
+  description: string;
 
     //PAYMENT DATA
     @AllowNull(false)
@@ -23,14 +23,14 @@ export class ProductModel extends Model {
 
     //EXTRA DATA
     @AllowNull(false)
-    @Column({type: 'jsonb'})
-    properties: string;
+  @Column({type: 'jsonb'})
+  properties: string;
 
-    @AllowNull(false)
-    @ForeignKey(() => AdministratorModel)
-    @Column
-    administratorId: number
+  @AllowNull(false)
+  @ForeignKey(() => AdministratorModel)
+  @Column
+  administratorId: number;
 
-    @BelongsTo(() => AdministratorModel)
-    administrator: AdministratorModel
+  @BelongsTo(() => AdministratorModel)
+  administrator: AdministratorModel;
 }

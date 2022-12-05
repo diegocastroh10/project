@@ -111,11 +111,13 @@ export class ProductsController {
         )
     }
 
-    @Get('/getPhoto/:filename')
-    @ApiTags('Product Endpoints')
+  @Get('/getPhoto/:filename')
+  @ApiTags('Product Endpoints')
     getPhoto(@Param('filename') filename: string, @Res() res){
         return of (res.sendFile(join(process.cwd(), './uploads/'+filename)));
     }
+
+
 
     @Delete('/deleteService')
     @ApiTags('Product Endpoints')

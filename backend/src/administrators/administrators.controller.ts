@@ -19,14 +19,14 @@ const Links = {
 }
 
 @Controller('administrators')
-    export class AdministratorsController {
-    constructor(private readonly administratorsService: AdministratorsService) {}
+  export class AdministratorsController {
+  constructor(private readonly administratorsService: AdministratorsService) {}
 
-    @Post()
-    @ApiTags('Administrator Endpoints')
-    create(@Body() createAdministratorDto: CreateAdministratorDto){
-        return this.administratorsService.create(createAdministratorDto);
-    }
+  @Post()
+  @ApiTags('Administrator Endpoints')
+  create(@Body() createAdministratorDto: CreateAdministratorDto){
+    return this.administratorsService.create(createAdministratorDto);
+  }
 
     @Post('/authenticate')
     @ApiTags('Administrator Endpoints')
