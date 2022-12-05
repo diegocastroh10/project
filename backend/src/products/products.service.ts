@@ -91,7 +91,7 @@ export class ProductsService {
             return ({
                 status: StatusCodes.OK,
                 send: ReasonPhrases.OK,
-                data: products
+                data: products,
             })
         }
         catch (error) {
