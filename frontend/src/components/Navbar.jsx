@@ -2,7 +2,8 @@ import React, { useEffect } from 'react';
 import { AiOutlineMenu } from 'react-icons/ai';
 import { FiShoppingBag, FiShoppingCart } from 'react-icons/fi';
 import { BsChatLeft } from 'react-icons/bs';
-import { RiNotification3Line } from 'react-icons/ri';
+import { RiNotification3Line,RiLogoutBoxFill } from 'react-icons/ri';
+
 import { MdKeyboardArrowDown } from 'react-icons/md';
 import { TooltipComponent } from '@syncfusion/ej2-react-popups';
 
@@ -79,6 +80,15 @@ const Navbar = () => {
           color='red' 
           icon={<RiNotification3Line /> } 
         />
+
+        <NavButton 
+          title='Cerrar Sesión' 
+          dotColor='#03C9D7'
+          href="http://127.0.0.1:3000"
+          customFunc={() =>localStorage.removeItem('token')} 
+          color='red' 
+          icon={<RiLogoutBoxFill /> } 
+        />  
 
         <TooltipComponent
         content='Profile' 
